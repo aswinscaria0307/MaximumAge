@@ -12,6 +12,7 @@ public class MaxAgeTest {
 
     @Before
     public void setUp()  {
+
         maxAge = new MaxAge();
     }
     @Test

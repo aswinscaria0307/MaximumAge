@@ -1,26 +1,22 @@
 package com.jap;
 
 public class MaxAge {
+    int highest;
 
-   // Write the logic to calculate the maximum age from the given array
-    //inside the below method and return the calculated maximum age.
     public int getMaxAge(int [] age){
-
-        return 0;
+        for(int i=0;i<age.length;i++) {
+            if (age[i] > highest) {
+                highest = age[i];
+            }
+        }
+        return highest;
 
     }
 
     public static void main(String[] args) {
-        //Declare and initialize values to the age array.
-
-        //Create an object of the class MaxAge
-
-        //Call the method getMaxAge and pass the parameter
-
-
-
-
-
-
+                MaxAge obj=new MaxAge();
+                int[] age={23,34,33,24,25,26,31};
+                int x=obj.getMaxAge(age);
+System.out.println("Oldest Player :"+ x);
     }
 }
